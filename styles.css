@@ -1,0 +1,61 @@
+/* Style for the entire body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style for the calculator container */
+#calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+/* Style for the display input field */
+#display {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    border: 1px solid #ddd;
+}
+
+/* Style for the buttons container */
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Style for each button */
+.button {
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+#equals {
+    grid-column: span 4;
+    background-color: #28a745;
+}
+
+#equals:hover {
+    background-color: #218838;
+}
